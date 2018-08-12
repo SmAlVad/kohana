@@ -20,8 +20,8 @@ return array
 			 */
 			'hostname'   => 'localhost',
 			'database'   => 'kohana',
-			'username'   => FALSE,
-			'password'   => FALSE,
+			'username'   => 'kohana',
+			'password'   => 'kohana',
 			'persistent' => FALSE,
 		),
 		'table_prefix' => '',
@@ -40,8 +40,8 @@ return array
 			 * boolean  persistent  use persistent connections?
 			 */
 			'dsn'        => 'mysql:host=localhost;dbname=kohana',
-			'username'   => 'root',
-			'password'   => 'r00tdb',
+			'username'   => 'kohana',
+			'password'   => 'kohana',
 			'persistent' => FALSE,
 		),
 		/**

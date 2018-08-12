@@ -56,15 +56,15 @@ error_reporting(E_ALL | E_STRICT);
 // Set the full path to the docroot
 define('DOCROOT', realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR);
 
-// Make the application relative to the docroot, for symlink'd index.php
+// Make the application relative to the docroot, for symlink'd Index.php
 if ( ! is_dir($application) AND is_dir(DOCROOT.$application))
 	$application = DOCROOT.$application;
 
-// Make the modules relative to the docroot, for symlink'd index.php
+// Make the modules relative to the docroot, for symlink'd Index.php
 if ( ! is_dir($modules) AND is_dir(DOCROOT.$modules))
 	$modules = DOCROOT.$modules;
 
-// Make the system relative to the docroot, for symlink'd index.php
+// Make the system relative to the docroot, for symlink'd Index.php
 if ( ! is_dir($system) AND is_dir(DOCROOT.$system))
 	$system = DOCROOT.$system;
 
@@ -72,6 +72,11 @@ if ( ! is_dir($system) AND is_dir(DOCROOT.$system))
 define('APPPATH', realpath($application).DIRECTORY_SEPARATOR);
 define('MODPATH', realpath($modules).DIRECTORY_SEPARATOR);
 define('SYSPATH', realpath($system).DIRECTORY_SEPARATOR);
+
+// Define the absolute paths for static files
+define('JSPATH', 'application'.DIRECTORY_SEPARATOR.'media'.DIRECTORY_SEPARATOR.'js'.DIRECTORY_SEPARATOR);
+define('STYLEPATH', 'application'.DIRECTORY_SEPARATOR.'media'.DIRECTORY_SEPARATOR.'css'.DIRECTORY_SEPARATOR);
+define('IMGPATH', 'application'.DIRECTORY_SEPARATOR.'media'.DIRECTORY_SEPARATOR.'img'.DIRECTORY_SEPARATOR);
 
 // Clean up the configuration vars
 unset($application, $modules, $system);

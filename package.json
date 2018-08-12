@@ -1,0 +1,30 @@
+{
+  "name": "kohana",
+  "version": "1.0.0",
+  "description": "[Kohana](http://kohanaframework.org/) is an elegant, open source, and object oriented HMVC framework built using PHP5, by a team of volunteers. It aims to be swift, secure, and small.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmAlVad/kohana.git"
+  },
+  "author": "SmAl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmAlVad/kohana/issues"
+  },
+  "homepage": "https://github.com/SmAlVad/kohana#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
+  }
+}

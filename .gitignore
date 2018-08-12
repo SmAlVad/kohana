@@ -10,4 +10,8 @@ nbproject
 build
 composer.lock
 composer.phar
+
 vendor/*
+node_modules/*
+media/img/*
+.idea/*

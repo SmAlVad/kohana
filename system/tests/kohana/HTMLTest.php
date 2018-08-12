@@ -35,7 +35,7 @@ class Kohana_HTMLTest extends Unittest_TestCase
 	// @codingStandardsIgnoreStart
 	protected $environmentDefault = array(
 		'Kohana::$base_url'    => '/kohana/',
-		'Kohana::$index_file'  => 'index.php',
+		'Kohana::$index_file'  => 'Index.php',
 		'HTML::$strict' => TRUE,
 		'HTTP_HOST'	=> 'www.kohanaframework.org',
 	);
@@ -109,7 +109,7 @@ class Kohana_HTMLTest extends Unittest_TestCase
 				'http://google.com/script.js',
 			),
 			array(
-				'<script type="text/javascript" src="http://www.kohanaframework.org/kohana/index.php/my/script.js"></script>',
+				'<script type="text/javascript" src="http://www.kohanaframework.org/kohana/Index.php/my/script.js"></script>',
 				'my/script.js',
 				NULL,
 				'http',
@@ -186,14 +186,14 @@ class Kohana_HTMLTest extends Unittest_TestCase
 				FALSE
 			),
 			array(
-				'<link type="text/css" href="https://www.kohanaframework.org/kohana/index.php/my/style.css" rel="stylesheet" />',
+				'<link type="text/css" href="https://www.kohanaframework.org/kohana/Index.php/my/style.css" rel="stylesheet" />',
 				'my/style.css',
 				array(),
 				'https',
 				TRUE
 			),
 			array(
-				'<link type="text/css" href="https://www.kohanaframework.org/kohana/index.php/my/style.css" rel="stylesheet" />',
+				'<link type="text/css" href="https://www.kohanaframework.org/kohana/Index.php/my/style.css" rel="stylesheet" />',
 				'/my/style.css',
 				array(),
 				'https',
@@ -201,7 +201,7 @@ class Kohana_HTMLTest extends Unittest_TestCase
 			),
 			array(
 				// #4283: http://dev.kohanaframework.org/issues/4283
-				'<link type="text/css" href="https://www.kohanaframework.org/kohana/index.php/my/style.css" rel="stylesheet/less" />',
+				'<link type="text/css" href="https://www.kohanaframework.org/kohana/Index.php/my/style.css" rel="stylesheet/less" />',
 				'my/style.css',
 				array(
 					'rel' => 'stylesheet/less'
@@ -284,7 +284,7 @@ class Kohana_HTMLTest extends Unittest_TestCase
 				FALSE,
 			),
 			array(
-				'<a href="https://www.kohanaframework.org/kohana/index.php/users/example">Kohana</a>',
+				'<a href="https://www.kohanaframework.org/kohana/Index.php/users/example">Kohana</a>',
 				array(),
 				'users/example',
 				'Kohana',
@@ -293,7 +293,7 @@ class Kohana_HTMLTest extends Unittest_TestCase
 				TRUE,
 			),
 			array(
-				'<a href="https://www.kohanaframework.org/kohana/index.php/users/example">Kohana</a>',
+				'<a href="https://www.kohanaframework.org/kohana/Index.php/users/example">Kohana</a>',
 				array(),
 				'users/example',
 				'Kohana',
@@ -301,7 +301,7 @@ class Kohana_HTMLTest extends Unittest_TestCase
 				'https',
 			),
 			array(
-				'<a href="https://www.kohanaframework.org/kohana/index.php/users/example">Kohana</a>',
+				'<a href="https://www.kohanaframework.org/kohana/Index.php/users/example">Kohana</a>',
 				array(),
 				'users/example',
 				'Kohana',
@@ -361,7 +361,7 @@ class Kohana_HTMLTest extends Unittest_TestCase
 				'My picture file',
 			),
 			array(
-				'<a href="https://www.kohanaframework.org/kohana/index.php/mypic.png" attr="value">My picture file</a>',
+				'<a href="https://www.kohanaframework.org/kohana/Index.php/mypic.png" attr="value">My picture file</a>',
 				array('attr' => 'value'),
 				'mypic.png',
 				'My picture file',
